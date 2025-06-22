@@ -1,0 +1,5 @@
+gradio>=4.0.0
+yt-dlp>=2024.01.01
+webvtt-py
+google-generativeai
+xhtml2pdf

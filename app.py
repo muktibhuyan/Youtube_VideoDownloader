@@ -2,8 +2,8 @@ def format_scene_breakdown(scenes):
     rows = """
     <table style='width:100%; border-collapse: collapse; background-color:#1a1a1a; color: #FFFFFF; border: 2px solid #FF8C00; font-size: 16px;box-shadow: 0 4px 8px rgba(0,0,0,0.3);'>
         <tr style='background-color:#FF8C00; color: #000000;'>
-            <th style='padding: 8px; border: 1px solid  #FF8C00; color: #000000; font-weight: bold;'>⏱️ Timestamp</th>
-            <th style='padding: 8px; border: 1px solid # #FF8C00; color: #000000; font-weight: bold;'>📝 Description</th>
+            <th style='padding: 8px; border: 1px solid #FF8C00; color: #000000; font-weight: bold;'>⏱️ Timestamp</th>
+            <th style='padding: 8px; border: 1px solid #FF8C00; color: #000000; font-weight: bold;'>📝 Description</th>
         </tr>
     """
     pattern = re.compile(r"\*\*\[(.*?)\]\*\*:\s*(.*)")
@@ -538,7 +538,7 @@ class YouTubeDownloader:
     <div style='font-family: Arial, sans-serif; background: linear-gradient(135deg, #2d3748, #1a202c); padding: 20px; border-radius: 15px; border: 2px solid #FF8C00; box-shadow: 0 8px 32px rgba(255, 140, 0, 0.3);'>
     
         <div style='text-align: center; margin-bottom: 20px;'>
-            <h2 style='color: #87CEEB; font-size: 24px; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);'>🎬 YouTube Video Analysis Report</h2>
+            <h2 style='color: #FF8C00; font-size: 24px; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.5);'>🎬 YouTube Video Analysis Report</h2>
             <div style='height: 3px; background: linear-gradient(90deg, #FF8C00, #87CEEB); margin: 10px 0; border-radius: 5px;'></div>
         </div>
     
@@ -547,10 +547,10 @@ class YouTubeDownloader:
             
             <!-- Basic Information Card -->
             <div style='background: rgba(135, 206, 235, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #87CEEB;'>
-                <h3 style='color: #87CEEB; margin: 0 0 10px 0; font-size: 16px;'>📋 Basic Info</h3>
+                <h3 style='color: #FF8C00; margin: 0 0 10px 0; font-size: 16px;'>📋 Basic Info</h3>
                 <table style='width: 100%; font-size: 14px;'>
                     <tr><td style='color: #87CEEB; font-weight: bold; padding: 4px 0;'>📹 Title:</td></tr>
-                    <tr><td style='color: #FFFFFF; padding: 4px 0 8px 0; word-wrap: wrap-word; white-space: normal; max-width: 200px;'>{title}</td></tr>
+                    <tr><td style='color: #87CEEB; font-weight: bold: padding: 4px 0 8px 0; word-wrap: wrap-word; white-space: normal; max-width: 200px;'>{title}</td></tr>
                     <tr><td style='color: #87CEEB; font-weight: bold; padding: 4px 0;'>👤 Creator:</td><td style='color: #87CEEB; padding: 2px 0;'>{uploader[:20]}{'...' if len(uploader) > 20 else ''}</td></tr>
                     <tr><td style='color: #87CEEB; font-weight: bold; padding: 4px 0;'>📅 Date:</td><td style='color: #87CEEB; padding: 2px 0;'>{formatted_date}</td></tr>
                     <tr><td style='color: #87CEEB; font-weight: bold; padding: 4px 0;'>⏱️ Duration:</td><td style='color: #87CEEB; padding: 2px 0;'>{duration_str}</td></tr>
@@ -559,7 +559,7 @@ class YouTubeDownloader:
     
             <!-- Performance Metrics Card -->
             <div style='background: rgba(135, 206, 235, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #FF8C00;border: 1px solid #444'>
-                <h3 style='color: #87CEEB; margin: 0 0 10px 0; font-size: 16px;'>📊 Metrics</h3>
+                <h3 style='color: #FF8C00; margin: 0 0 10px 0; font-size: 16px;'>📊 Metrics</h3>
                 <table style='width: 100%; font-size: 12px;'>
                     <tr><td style='color: #87CEEB; font-weight: bold; padding: 4px 0;'>👀 Views:</td><td style='color: #87CEEB; padding: 4px 0;'>{self.format_number(view_count)}</td></tr>
                     <tr><td style='color: #87CEEB; font-weight: bold; padding: 4px 0;'>👍 Likes:</td><td style='color: #87CEEB; padding: 4px 0;'>{self.format_number(like_count)}</td></tr>
@@ -570,7 +570,7 @@ class YouTubeDownloader:
     
             <!-- Content Analysis Card -->
             <div style='background:rgba(135, 206, 235, 0.1); padding: 15px; border-radius: 10px; border-left: 4px solid #87CEEB;border: 1px solid #444'>
-                <h3 style='color:#87CEEB; margin: 0 0 10px 0; font-size: 16px;'>🎯 Analysis</h3>
+                <h3 style='color:#FF8C00; margin: 0 0 10px 0; font-size: 16px;'>🎯 Analysis</h3>
                 <table style='width: 100%; font-size: 12px;'>
                     <tr><td style='color: #87CEEB; font-weight: bold; padding: 4px 0;'>📂 Type:</td></tr>
                     <tr><td style='color: 87CEEB; padding: 4px 0 8px 0; word-break: break-word;'>{video_type}</td></tr>
